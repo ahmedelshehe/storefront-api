@@ -4,7 +4,6 @@
 This repo contains a basic node api for storefront app
 
 ##  Technologies Used
-Your application must make use of the following libraries:
 - Postgres for the database
 - Node/Express for the application logic
 - dotenv from npm for managing environment variables
@@ -18,15 +17,15 @@ npm install
 ```
 ## Database Configuration
 Add .env file in the root folder and add the following variables
-POSTGRES_HOST=[your_host]
-POSTGRES_DB=[your_dev_database]
-POSTGRES_TEST_DB=[your_test_database]
-POSTGRES_USER=[your_database_user]
-POSTGRES_PASSWORD=[your_database_password]
-BCRYPT_PASSWORD=[your_bcrypt_password]
-SALT_ROUNDS=[your_salt_rounds]
-ENV=[either put "test" or "dev" here]
-TOKEN_SECRET=[your_token_secret]
+- POSTGRES_HOST=[your_host]
+- POSTGRES_DB=[your_dev_database]
+- POSTGRES_TEST_DB=[your_test_database]
+- POSTGRES_USER=[your_database_user]
+- POSTGRES_PASSWORD=[your_database_password]
+- BCRYPT_PASSWORD=[your_bcrypt_password]
+- SALT_ROUNDS=[your_salt_rounds]
+- ENV=[either put "test" or "dev" here]
+- TOKEN_SECRET=[your_token_secret]
 
 ## To run the Api
 ```
@@ -41,26 +40,26 @@ npm run test
 - Database (5432)
 ## API Endpoints
 ## Users Endpoint
-INDEX route: 'users/' [GET] 
-CREATE route: 'users/create' [POST] 
-UPDATE route: 'users/update/:id' [POST] 
-SHOW route: 'users/show/:id' [GET] 
-SIGN IN route: 'users/signin' [POST] 
-DELETE route :'users/delete'[POST]
+- INDEX route: 'users/' [GET] 
+- CREATE route: 'users/create' [POST] 
+- UPDATE route: 'users/update/:id' [POST] 
+- SHOW route: 'users/show/:id' [GET] 
+- SIGN IN route: 'users/signin' [POST] 
+- DELETE route :'users/delete'[POST]
 ## Products Endpoint
-INDEX route: 'products/' [GET] 
-CREATE route: 'products/create' [POST] 
-UPDATE route: 'products/update/:id' [POST] 
-SHOW route: 'products/show/:id' [GET] 
-DELETE route :'products/delete'[POST]
+- INDEX route: 'products/' [GET] 
+- CREATE route: 'products/create' [POST] 
+- UPDATE route: 'products/update/:id' [POST] 
+- SHOW route: 'products/show/:id' [GET] 
+- DELETE route :'products/delete'[POST]
 # Orders Endpoints
-INDEX route: 'orders/' [GET] 
-CREATE route: 'orders/create' [POST] 
-UPDATE route: 'orders/update/:id' [POST] 
-SHOW route: 'orders/show/:id/:order_id' [GET] 
-DELETE route :'orders/delete'[POST]
-RECENT ORDER 'orders/recent/:id' [GET]
-ADD_PRODUCT 'orders/:order_id/products' [POST]
+- INDEX route: 'orders/' [GET] 
+- CREATE route: 'orders/create' [POST] 
+- UPDATE route: 'orders/update/:id' [POST] 
+- SHOW route: 'orders/show/:id/:order_id' [GET] 
+- DELETE route :'orders/delete'[POST]
+- RECENT ORDER 'orders/recent/:id' [GET]
+- ADD_PRODUCT 'orders/:order_id/products' [POST]
 ## Data Shapes
 
 ## Users Table 
